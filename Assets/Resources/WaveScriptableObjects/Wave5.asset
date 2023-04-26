@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdc7a95faa1ab154a91fbc3b53158082, type: 3}
+  m_Name: Wave5
+  m_EditorClassIdentifier: 
+  subWaves:
+  - startTime: 3
+    enemyId: 1
+    frequency: 1
+    endTime: 5
+  - startTime: 5
+    enemyId: 2
+    frequency: 0.8
+    endTime: 10
+  - startTime: 5.5
+    enemyId: 4
+    frequency: 0.5
+    endTime: 20
+  - startTime: 25
+    enemyId: 0
+    frequency: 1.5
+    endTime: 30

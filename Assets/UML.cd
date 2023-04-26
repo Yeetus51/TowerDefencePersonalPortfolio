@@ -1,0 +1,549 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AoeTower">
+    <Position X="7.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAABAACAAAAAABAAAAAAAAAAAAAAAABAAAAAAAgAA=</HashCode>
+      <FileName>Assets\Scripts\TowerScripts\AoeTower.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArrowManager">
+    <Position X="13" Y="3.75" Width="1.5" />
+    <InheritanceLine Type="Projectile" FixedToPoint="true">
+      <Path>
+        <Point X="12" Y="3.704" />
+        <Point X="12" Y="4.312" />
+        <Point X="13" Y="4.312" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ProjectileScripts\ArrowManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AutoPathGenerator">
+    <Position X="19.25" Y="1.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAWRCAAAgGgAgIAAEAIAAAAAAAAAEAAAAAAAAgAAAIE=</HashCode>
+      <FileName>Assets\Scripts\PathScripts\AutoPathGenerator.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="endAnchor" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DebuffAoeTower">
+    <Position X="9.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAgAAAAEIAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\TowerScripts\DebuffAoeTower.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Enemy">
+    <Position X="1.25" Y="1.25" Width="1.75" />
+    <NestedTypes>
+      <Delegate Name="Enemy.DamageTakenHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\EnemyScripts\Enemy.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <AssociationLine Name="followPath" Type="FollowPath" ManuallyRouted="true">
+      <Path>
+        <Point X="2.125" Y="1.25" />
+        <Point X="2.125" Y="0.681" />
+        <Point X="22" Y="0.681" />
+        <Point X="22" Y="1.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AgAgAYAAAgAAACgEAAIAoAAAQBAAARAAAAAAgAAAggo=</HashCode>
+      <FileName>Assets\Scripts\EnemyScripts\Enemy.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="followPath" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="EnemyManager">
+    <Position X="3.25" Y="1.25" Width="1.75" />
+    <AssociationLine Name="EnemyData" Type="EnemyType" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.5" Y="5.05" />
+        <Point X="4.5" Y="10.926" />
+        <Point X="8.385" Y="10.926" Type="JumpStart" />
+        <Point X="8.552" Y="10.926" Type="JumpEnd" />
+        <Point X="20.75" Y="10.926" />
+        <Point X="20.75" Y="13.75" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="followPathScript" Type="FollowPath" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.125" Y="1.25" />
+        <Point X="4.125" Y="1.156" />
+        <Point X="16.167" Y="1.156" Type="JumpStart" />
+        <Point X="16.333" Y="1.156" Type="JumpEnd" />
+        <Point X="21.156" Y="1.156" />
+        <Point X="21.156" Y="5.345" />
+        <Point X="22.562" Y="5.345" />
+        <Point X="22.562" Y="4.992" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="healthBar" Type="HealthBar" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.812" Y="5.05" />
+        <Point X="4.812" Y="10.69" />
+        <Point X="8.385" Y="10.69" Type="JumpStart" />
+        <Point X="8.552" Y="10.69" Type="JumpEnd" />
+        <Point X="12.75" Y="10.69" />
+        <Point X="12.75" Y="9.531" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AARBAAAAAAAAQAAGAAAAAAAgAAAAAQgAAAEIEAAQQEI=</HashCode>
+      <FileName>Assets\Scripts\EnemyScripts\EnemyManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="EnemyData" />
+      <Field Name="followPathScript" />
+      <Field Name="healthBar" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="EnemyType">
+    <Position X="20" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAgg=</HashCode>
+      <FileName>Assets\Scripts\ScriptableObjects\EnemyType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FollowPath">
+    <Position X="21.25" Y="1.25" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="FollowPath.LifeLostHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\PathScripts\FollowPath.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>MAABAIAAAyAAgAAAAAAAAAAAAAAAAAAAAAAEAAAACEA=</HashCode>
+      <FileName>Assets\Scripts\PathScripts\FollowPath.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="designatedPath" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GameManager">
+    <Position X="1.5" Y="11.75" Width="2" />
+    <NestedTypes>
+      <Delegate Name="GameManager.GameRestartHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\GameManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="GameManager.MoneyChangedHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\GameManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="GameManager.LivesChangedHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\GameManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="GameManager.GameStateChangedHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\GameManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="GameManager.GameFinishedHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\GameManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <AssociationLine Name="levelData" Type="LevelData" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.375" Y="17.674" />
+        <Point X="2.375" Y="19.54" />
+        <Point X="19.5" Y="19.54" />
+        <Point X="19.5" Y="15.175" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>QAAQACMAACAAAIAAAAAAAgAhACIAAAAAQAEBAACAkMA=</HashCode>
+      <FileName>Assets\Scripts\GameManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="uiManager" />
+      <Field Name="levelData" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="HealthBar">
+    <Position X="12" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABCAAAACAAAAAAAAAAAAAAAAAAACgAAKAAAAAAAEI=</HashCode>
+      <FileName>Assets\Scripts\EnemyScripts\HealthBar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LevelData">
+    <Position X="18.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ScriptableObjects\LevelData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManualPathGenerator">
+    <Position X="17.25" Y="1.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAACAACAAAAAAAAAAAAAAAAAAAAAAAEAIAAAAAIA=</HashCode>
+      <FileName>Assets\Scripts\PathScripts\ManualPathGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObjectPooler">
+    <Position X="27.5" Y="1.25" Width="2.5" />
+    <NestedTypes>
+      <Enum Name="ObjectPooler.EnemyID" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\ObjectPooler.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AMCjAIBxACAAAKAIEAAAAYADoACogxAKQCGAAIQFAkQ=</HashCode>
+      <FileName>Assets\Scripts\ObjectPooler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PathAnchor">
+    <Position X="19.25" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAABAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\PathScripts\AutoPathGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PotionManager">
+    <Position X="13" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AASAAAAAAAAAAAAAAAAAAAACAAAIAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ProjectileScripts\PotionManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Projectile">
+    <Position X="11.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAwAAABAAgAAAAAAAAAAAAAAAAAEAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ProjectileScripts\Projectile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RangeAttackTower">
+    <Position X="7.75" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAACAAAABAAAAAgAAAAAIAAAAAQAgAAABAAAAA=</HashCode>
+      <FileName>Assets\Scripts\TowerScripts\RangeAttackTower.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SingleAttackTower">
+    <Position X="7.75" Y="1.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>CCEAAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\TowerScripts\SingleAttackTower.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SubWaveSO">
+    <Position X="27.5" Y="15.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="SubWaveSO.EnemyID" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\ScriptableObjects\SubWaveSO.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgICAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ScriptableObjects\SubWaveSO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tower">
+    <Position X="5.5" Y="1.25" Width="2" />
+    <AssociationLine Name="towerData" Type="TowerTypeBase" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.625" Y="9.348" />
+        <Point X="6.625" Y="10.473" />
+        <Point X="8.385" Y="10.473" Type="JumpStart" />
+        <Point X="8.552" Y="10.473" Type="JumpEnd" />
+        <Point X="12.667" Y="10.473" Type="JumpStart" />
+        <Point X="12.833" Y="10.473" Type="JumpEnd" />
+        <Point X="22.5" Y="10.473" />
+        <Point X="22.5" Y="13.75" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="lockedEnemy" Type="EnemyManager" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.5" Y="7.199" />
+        <Point X="4.896" Y="7.199" Type="JumpStart" />
+        <Point X="4.729" Y="7.199" Type="JumpEnd" />
+        <Point X="4.583" Y="7.199" Type="JumpStart" />
+        <Point X="4.417" Y="7.199" Type="JumpEnd" />
+        <Point X="3.438" Y="7.199" />
+        <Point X="3.438" Y="5.05" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.987" Y="0.184" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="towerHover" Type="TowerHover" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.312" Y="9.348" />
+        <Point X="6.312" Y="10.183" />
+        <Point X="6.542" Y="10.183" Type="JumpStart" />
+        <Point X="6.708" Y="10.183" Type="JumpEnd" />
+        <Point X="8.385" Y="10.183" Type="JumpStart" />
+        <Point X="8.552" Y="10.183" Type="JumpEnd" />
+        <Point X="10.312" Y="10.183" />
+        <Point X="10.312" Y="9.665" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.06" Y="0.27" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAVDUAQJSjACAAAAAQAgSARhAIABAAAAQMACQAAAEE0=</HashCode>
+      <FileName>Assets\Scripts\TowerScripts\Tower.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="towerData" />
+      <Field Name="lockedEnemy" />
+      <Field Name="towerHover" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TowerHover">
+    <Position X="9.75" Y="6.5" Width="2" />
+    <NestedTypes>
+      <Delegate Name="TowerHover.MouseOverHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\TowerScripts\TowerHover.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="TowerHover.MouseClickedHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\TowerScripts\TowerHover.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CAQIAAAAAAAAAAAAAAAAAAAAMAAAAAgAAAAAAAAQAAA=</HashCode>
+      <FileName>Assets\Scripts\TowerScripts\TowerHover.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TowerTypeBase">
+    <Position X="21.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAIABAAAIAAAAAAAAAAEQAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ScriptableObjects\TowerTypeBase.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="upgradables" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="TowerTypeCreeper">
+    <Position X="23.5" Y="16.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAIAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ScriptableObjects\TowerTypeCreeper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TowerTypeSkeleton">
+    <Position X="23.5" Y="13.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ScriptableObjects\TowerTypeSkeleton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TowerTypeWitch">
+    <Position X="23.5" Y="14.75" Width="2" />
+    <InheritanceLine Type="TowerTypeBase" FixedToPoint="true">
+      <Path>
+        <Point X="23.25" Y="15.312" />
+        <Point X="23.5" Y="15.312" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAABAAAAAAAAAAEAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ScriptableObjects\TowerTypeWitch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TowerTypeZombie">
+    <Position X="23.5" Y="11.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ScriptableObjects\TowerTypeZombie.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UiManager">
+    <Position X="3.75" Y="11" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>QUQRAkhAAaAgQAAAAIAAoAABABEAgoAAwAAgYEgQgEA=</HashCode>
+      <FileName>Assets\Scripts\UiScripts\UiManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UiMoneyDroppedElement">
+    <Position X="16" Y="11.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAABAAAAAAgAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\UiScripts\UiMoneyDroppedElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UiStatElement">
+    <Position X="14.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\UiScripts\UiStatElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UiTowerShopManager">
+    <Position X="6.75" Y="11.75" Width="2.25" />
+    <AssociationLine Name="towerSOs" Type="TowerTypeBase" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.875" Y="16.963" />
+        <Point X="7.875" Y="18.95" />
+        <Point X="19.417" Y="18.95" Type="JumpStart" />
+        <Point X="19.583" Y="18.95" Type="JumpEnd" />
+        <Point X="20.981" Y="18.95" />
+        <Point X="20.981" Y="16" />
+        <Point X="21.75" Y="16" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="path" Type="WayPointPath" ManuallyRouted="true">
+      <Path>
+        <Point X="8.469" Y="11.75" />
+        <Point X="8.469" Y="9.88" />
+        <Point X="10.229" Y="9.88" Type="JumpStart" />
+        <Point X="10.396" Y="9.88" Type="JumpEnd" />
+        <Point X="12.667" Y="9.88" Type="JumpStart" />
+        <Point X="12.833" Y="9.88" Type="JumpEnd" />
+        <Point X="16.25" Y="9.88" />
+        <Point X="16.25" Y="3.896" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQBAAAAAiAAEBwAIAgCQAAAQAAAAgQAQAAAAQIAgEg=</HashCode>
+      <FileName>Assets\Scripts\UiScripts\UiTowerShopManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="path" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="towerSOs" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="UiUpgradeElement">
+    <Position X="12" Y="12.5" Width="2" />
+    <AssociationLine Name="statUiElement" Type="UiStatElement" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14" Y="14.75" />
+        <Point X="15.438" Y="14.75" />
+        <Point X="15.438" Y="14.377" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="upgrade" Type="Upgradable" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.062" Y="16.492" />
+        <Point X="13.062" Y="16.846" />
+        <Point X="14.25" Y="16.846" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="upgradeShopManager" Type="UiUpgradeShopManager" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12.75" Y="16.492" />
+        <Point X="12.75" Y="17.265" />
+        <Point X="13.505" Y="17.265" />
+        <Point X="13.505" Y="17.625" />
+        <Point X="11.75" Y="17.625" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>CAQAAAKAQCEAAQAAAAAoBAAAIAgAAAACAAAAAEACgAA=</HashCode>
+      <FileName>Assets\Scripts\UiScripts\UiUpgradeElement.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="statUiElement" />
+      <Field Name="upgrade" />
+      <Field Name="upgradeShopManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="UiUpgradeShopManager">
+    <Position X="9.25" Y="11.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>FAIRImAAAACAAAAAAAAAAACkAAAABglAYAAABAYQEEA=</HashCode>
+      <FileName>Assets\Scripts\UiScripts\UiUpgradeShopManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="upgradeUiElements" />
+      <Field Name="statUiElements" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Upgradable">
+    <Position X="14.25" Y="15" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Upgradable.UpgradeType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\ScriptableObjects\Upgradable.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <AssociationLine Name="upgradeLevels" Type="UpgradeCostPair" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15.75" Y="15.688" />
+        <Point X="17" Y="15.688" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEQAAAAAAAAAAAAAAAAAAAAAAAABICAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ScriptableObjects\Upgradable.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="upgradeLevels" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="UpgradeCostPair">
+    <Position X="17" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAQACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ScriptableObjects\Upgradable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WaveSO">
+    <Position X="25.75" Y="15.5" Width="1.5" />
+    <AssociationLine Name="subWaves" Type="SubWaveSO" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="26.5" Y="16.497" />
+        <Point X="26.5" Y="17.815" />
+        <Point X="28.5" Y="17.815" />
+        <Point X="28.5" Y="17.44" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ScriptableObjects\WaveSO.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="subWaves" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="WaveSpawner">
+    <Position X="23" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>EAQBaAAAAiABAAAAAQCAAAAgKAABICAAACAAEIAQgAA=</HashCode>
+      <FileName>Assets\Scripts\WaveSpawner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WayPointPath">
+    <Position X="15.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAEAAAAAAAAACAAAAABAAAoAAABAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\PathScripts\WayPointPath.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
